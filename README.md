@@ -4,15 +4,11 @@ A simple Cardboard-style Android VR app. Put your phone in a headset, sit in a w
 
 ## Install on the phone
 
-A debug APK is already built:
+On the phone, open this file and tap **Download**:
 
-`fizjo_vestibular_vr/SeaBoatVR-debug.apk`
+https://github.com/biokineticum/fizjo_vestibular_vr/raw/main/releases/SeaBoatVR-debug.apk
 
-Copy it to the phone and open it (allow “install from this source” if Android asks). Or from a PC with USB debugging:
-
-```
-adb install -r fizjo_vestibular_vr/SeaBoatVR-debug.apk
-```
+Then open the downloaded APK (allow “install from this source” if Android asks).
 
 To rebuild from source, open this folder in **Android Studio** and press Run.
 
