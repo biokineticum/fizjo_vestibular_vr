@@ -1,0 +1,7 @@
+{
+  "name": "fizjo-vestibular-vr",
+  "private": true,
+  "scripts": {
+    "start": "npx --yes serve app/src/main/assets/www -p 4173"
+  }
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <meta name="theme-color" content="#071820" />
+  <title>Sea Boat VR</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <canvas id="view"></canvas>
+  <div id="divider" hidden></div>
+
+  <div id="overlay">
+    <div class="panel">
+      <p class="eyebrow">Cardboard VR</p>
+      <h1>Sea Boat</h1>
+      <p class="lead">
+        You sit in a small boat on the open sea. Look left and right — the boat
+        turns and sails where you look.
+      </p>
+      <label class="row">
+        Speed
+        <select id="speed">
+          <option value="gentle" selected>Gentle</option>
+          <option value="normal">Normal</option>
+        </select>
+      </label>
+      <label class="row check">
+        <input id="lens" type="checkbox" />
+        Lens correction
+      </label>
+      <button id="start" type="button">Put phone in headset, then tap</button>
+      <p class="hint">
+        Tap once in VR to recenter. Phone back button returns here.
+        Stop if you feel dizzy.
+      </p>
+    </div>
+  </div>
+
+  <script src="vendor/three.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
