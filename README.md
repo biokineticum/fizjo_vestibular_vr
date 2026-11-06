@@ -1,34 +1,45 @@
-# Sea Boat VR
+# Sea Boat VR (`fizjo_vestibular_vr`)
 
-A simple Cardboard-style Android VR app. Put your phone in a headset, sit in a wooden boat on the sea, and **look left / right to steer**. The boat sails where you look.
+**Cardboard-style Android VR** — sit in a wooden boat on the sea and **look left/right to steer**. The boat sails where you look.
 
-## Install on the phone
+Student / clinical project for **vestibular and gaze-directed movement** practice. For physiotherapists, vestibular rehab, and VR education.
 
-On the phone, open this file and tap **Download**:
+## Features
+
+- Phone-in-headset VR (Google Cardboard–class viewers)
+- Gaze steering; tap to recenter; double-tap / Back returns to menu
+- Optional lens correction on the start screen
+- Prebuilt debug APK in `releases/`
+- Browser preview of the WebGL scene for desktop testing
+
+## Install (phone)
+
+Download and install:
 
 https://github.com/biokineticum/fizjo_vestibular_vr/raw/main/releases/SeaBoatVR-debug.apk
 
-Then open the downloaded APK (allow “install from this source” if Android asks).
+Allow install from that source if Android asks. **Stop if you feel dizzy.**
 
-To rebuild from source, open this folder in **Android Studio** and press Run.
+To rebuild: open the project in **Android Studio** and Run.
 
-- **Look around** — the boat turns and sails that way
-- **Tap the screen** — recenter heading
-- **Double-tap** or the phone **Back** button — return to the menu
-- Stop if you feel dizzy
+## Browser preview (no APK)
 
-## Quick browser preview (no APK)
-
-From this folder:
-
-```
+```bash
 npm start
 ```
 
-Open `http://localhost:4173` on the computer, or `http://YOUR-PC-IP:4173` on the phone (same Wi‑Fi). Drag to look on desktop. On the phone, tap to enter split-screen VR after allowing motion sensors.
+Opens a static server of `app/src/main/assets/www` on port **4173**. Use `http://localhost:4173` on PC, or `http://YOUR-PC-IP:4173` on the phone (same Wi‑Fi). Drag to look on desktop; on phone, tap for split-screen VR after allowing motion sensors.
 
-The installed Android app is more reliable than the browser: it stays landscape, keeps the screen awake, and uses a secure local page so the gyroscope works.
+The installed Android app is more reliable (landscape lock, wake lock, gyroscope).
 
 ## Headset
 
-Any cheap phone VR viewer works (Google Cardboard, Xiaomi, Shinecon, etc.). Use landscape. Enable **Lens correction** on the start screen if the image looks bowed or pinched; turn it off if the headset already has strong lenses and the world looks too warped.
+Any cheap phone VR viewer works. Use landscape. Enable **Lens correction** if the image looks bowed; turn it off if strong lenses already warp the world.
+
+---
+
+## Author
+
+**Dariusz Mosler** (Biokineticum) — physiotherapy, biomechanics, sports science  
+🌐 [biokineticum.com](https://biokineticum.com) · 📰 [Substack](https://biokineticum.substack.com) · 𝕏 [@Biokineticum](https://x.com/Biokineticum)
+
